@@ -3,7 +3,7 @@ Uncoupler Decoder
 
 This repository contains the source code of the firmware for an decoder for the Märklin Digital system. The decoder has only one output and is well suited for uncoupler tracks.
 
-The Atmel AVR Toolchain is needed for compiling and AVRDUDE for flashing.
+The Atmel AVR Toolchain for [Windows][1] or [Linux][2] is needed for compiling and [AVRDUDE][3] for flashing.
 
 
 Setting the Decoder Address
@@ -40,6 +40,12 @@ To set the address to 11 (1011 in binary) and the output to red/turn, the follow
 The firmware reads the address only after reset or power on. To set a new address, power must be switched off and on again or the decoder must be disconnected and then reconnected.
 
 
+Schematics and PCB Layout
+-------------------------
+
+Schematics and a PCB layout for the uncoupler decoder can be found in other [repository][4].
+
+
 License
 -------
 
@@ -56,3 +62,9 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+
+[1]: http://www.atmel.com/tools/atmelavrtoolchainforwindows.aspx
+[2]: http://www.atmel.com/tools/atmelavrtoolchainforlinux.aspx
+[3]: http://www.nongnu.org/avrdude/
+[4]: https://github.com/daspilker/uncoupler-decoder-schematics
