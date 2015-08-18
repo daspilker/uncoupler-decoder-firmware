@@ -108,7 +108,7 @@ ISR(TIMER1_OVF_vect) {
 }
 
 static void read_address(uint8_t* address, uint8_t* data) {
-  uint8_t address_in = (PIND & 0x03) | ((PIND >> 1) & 0x3C);
+  uint8_t address_in = (~PIND & 0x03) | ((~PIND >> 1) & 0x3C);
   uint8_t address_result = 0;
   uint8_t trit = 0;
   for (uint8_t i = 0; i < 4; i++) {
@@ -123,7 +123,7 @@ static void read_address(uint8_t* address, uint8_t* data) {
   }
   *address = address_result;
 
-  uint8_t data_in = PINB;
+  uint8_t data_in = ~PINB;
   uint8_t data_result = 0;
   uint8_t bit = 0;
   for (uint8_t i = 0; i < 3; i++) {
