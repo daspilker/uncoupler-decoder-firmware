@@ -117,7 +117,7 @@ static void read_address(uint8_t* address, uint8_t* data) {
     if (trit == 0x01) {
       address_result += 0x03;
     } else if (trit == 0x02) {
-      address_result += 0x01;
+      address_result += 0x02;
     }
     address_in /= 3;
   }
