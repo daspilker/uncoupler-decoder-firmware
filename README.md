@@ -23,7 +23,7 @@ The firmware expects the DIP switch to be connected with the following mapping:
     8 <-> PB1
     9 <-> PB2
 
-The first 8 positions are used to set the decoder address in binary format, which allows 255 different addresses (1 to 255). Position 1 sets the least significant and position 8 the most significant bit. Since each address has two outputs (red/turn and green/straight), Position 9 is used to select the output, ON for red (or turn) and OFF for green (or straight).
+The first 8 positions are used to set the decoder address in binary format, which allows 255 different addresses (1 to 255). Position 1 sets the least significant and position 8 the most significant bit. Since each address has two outputs (red/turn and green/straight), position 9 is used to select the output, ON for red (or turn) and OFF for green (or straight).
 
 To set the address to 11 (1011 in binary) and the output to red/turn, the following switches must be set:
 
